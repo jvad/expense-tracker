@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  min-height: 100vh;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  background-color: rgb(248, 248, 248);
+}
+.ex-logo {
+  font-size: 2.5em;
+  font-family: Roboto;
+  padding: 10px;
+  margin: 15px 0;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  /* background-color: grey; */
+}
+.balance {
+  margin-top: -10px;
+  text-align: left;
+  font-size: 1.5em;
+}
+.blnc {
+  font-weight: 500;
+}
+.incEx {
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 10px 0;
+  background-color: white;
+}
+.incEx span {
+  display: block;
+}
+.expS {
+  color: red;
+}
+.incS {
+  color: rgb(10, 233, 10);
+}
+.incEx div {
+  padding: 5px 30px;
+}
+
+.brderToEx {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  /* padding-right: 20px; */
+}
+.list {
+  list-style: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: -10px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.dlt-btn {
+  position: absolute;
+  cursor: pointer;
+  background-color: #e74c3c;
+  font-size: 1.2em;
+  color: #fff;
+  left: 0;
+  border: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.list li:hover .dlt-btn {
+  opacity: 1;
+}
+.btn:focus,
+.dlt-btn:focus {
+  outline: 0;
+}
+.plus {
+  border-right: 5px solid rgb(10, 233, 10);
+}
+.minus {
+  border-right: 5px solid red;
+}
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+label {
+  font-size: 1.8;
+  display: inline-block;
+  margin: 10px 0;
+}
+#form {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: -10px;
+}
+.btn {
+  cursor: pointer;
+  background-color: #214042;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+.ex-logo::before {
+  content: url(./eco.svg);
+  position: absolute;
+  top: 20%;
+  left: -18%;
+  /* height: 10px; */
+  transform: translateY(-20%);
+}
+footer {
+  background-color: #e74c3c;
+  width: 100%;
+  text-align: center;
+}
